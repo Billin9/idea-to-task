@@ -1,0 +1,75 @@
+---
+name: idea-to-task
+description: Use when the user wants to turn messy CEO or founder chat fragments, meeting notes, voice transcripts, brain dumps, or strategy thoughts into structured themes, task trees, execution suggestions, and minimal follow-up questions.
+---
+
+# CEO 想法整理与任务化
+
+把 CEO 的凌乱表达整理成可推进的任务树。目标不是生成会议纪要，而是输出下一步可执行结果。
+
+## 适用场景
+
+- 会议记录、聊天原文、语音转文字、碎片短句
+- 多个主题混在一起，需要拆主线和次线
+- 需要把模糊方向整理成项目级、里程碑级、执行项级任务
+- 需要判断是直接输出结果，还是先补少量关键问题
+
+## 核心原则
+
+- 先给结论，再给结构，最后给动作
+- 默认先产出，只有高风险歧义时才补问
+- 细化层级不能超过证据强度
+- 只提醒真正会影响方向的高风险推断
+- 输出重点是任务推进，不是复述原话
+- 不暴露内部推理，不输出 `<thinking>` 或方法说明
+
+## 工作流
+
+1. 识别输入类型：长文本、碎片短句或混合输入
+2. 判断主题密度：单主题、多相关主题、多不相关主题
+3. 判断可任务化程度：能否直接形成任务树
+4. 将原始表达归一为稳定意图
+5. 必要时拆主题，再分别生成任务树
+6. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
+
+遇到边界不清的输入时：
+
+- 如果只是信息不足，但主方向清楚：先给初版任务树，再补最少量问题
+- 如果一句话可以导出两条相反任务路径：明确给出双路径，不偷偷选边
+- 如果证据不足以支撑执行项：只输出到项目级或里程碑级
+
+## 补问规则
+
+- 只补会显著改变任务方向的问题
+- 问题数量尽量控制在 2 到 5 个
+- 如果输入已经足够推进，不要为了“更稳”而过度追问
+- 如果多个主题彼此独立，先拆主题再判断是否需要补问
+
+详细判定规则见 [decision-rules.md](./references/decision-rules.md)。
+
+## 输出结构
+
+默认按以下顺序输出：
+
+1. 核心判断
+2. 主题拆分
+3. 分层任务树
+4. 执行建议
+5. 风险与高风险推断
+6. 下一步动作
+
+具体模板见 [output-template.md](./references/output-template.md)。
+
+## 何时读取参考文件
+
+- 当你需要判断“该直接输出还是该补问”时，读取 [decision-rules.md](./references/decision-rules.md)
+- 当你需要稳定输出格式时，读取 [output-template.md](./references/output-template.md)
+- 当你需要校准风格或边界时，读取 [examples.md](./references/examples.md)
+
+## 明确禁止
+
+- 不把所有模糊表达都包装成确定结论
+- 不把多个无关主题硬拼成同一个项目
+- 不在证据不足时伪造细执行项
+- 不把输出写成长篇会议纪要
+- 不把时间节点、验证动作、交付约束误写成主题

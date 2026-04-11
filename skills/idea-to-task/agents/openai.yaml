@@ -1,0 +1,4 @@
+interface:
+  display_name: "Idea to Task"
+  short_description: "Turn CEO/founder notes into task trees and action advice"
+  default_prompt: "Use $idea-to-task to turn messy CEO or founder notes, voice transcripts, or brain dumps into structured tasks, risks, and next steps."
