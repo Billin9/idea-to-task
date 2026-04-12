@@ -26,7 +26,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. 主题拆分输出中，当检测到包含关系时只出现一个顶层主题，原来的并列主题变为其子任务线或里程碑
   3. 任务树模板中存在「归纳路径」层级，被包含的子主题能降级为里程碑节点
   4. decision-rules.md 中存在明确的「向上归纳」判断步骤，位于主题拆分步骤之前
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — decision-rules.md 新增归纳步骤 + output-template.md 新增归纳型模板
+- [ ] 01-02-PLAN.md — SKILL.md 工作流与核心原则更新 + 验证
 
 ### Phase 2: 示例校准
 **Goal**: examples.md 包含正反对比案例，模型能直接参照期望行为而不是仅靠规则推理
@@ -44,5 +47,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. 判断与输出重构 | 0/TBD | Not started | - |
+| 1. 判断与输出重构 | 0/2 | Not started | - |
 | 2. 示例校准 | 0/TBD | Not started | - |
