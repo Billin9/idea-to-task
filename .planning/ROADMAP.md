@@ -38,7 +38,9 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. examples.md 中存在至少一组正反对比案例，同一输入分别展示「平铺输出（错误）」和「归纳输出（正确）」
   2. 正确示例的结构与 Phase 1 重构后的 output-template.md 保持一致（顶层意图 + 子任务线）
-**Plans**: TBD
+**Plans:** 1 plan
+Plans:
+- [ ] 02-01-PLAN.md — 新增案例 7 正反对比 + 修复案例 2 归纳检查描述
 
 ## Progress
 
@@ -48,4 +50,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. 判断与输出重构 | 0/2 | Not started | - |
-| 2. 示例校准 | 0/TBD | Not started | - |
+| 2. 示例校准 | 0/1 | Not started | - |
