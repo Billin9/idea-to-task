@@ -37,18 +37,18 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| JUDGE-01 | TBD | Pending |
-| JUDGE-02 | TBD | Pending |
-| OUT-01 | TBD | Pending |
-| OUT-02 | TBD | Pending |
-| OUT-03 | TBD | Pending |
-| EX-01 | TBD | Pending |
+| JUDGE-01 | Phase 1 | Pending |
+| JUDGE-02 | Phase 1 | Pending |
+| OUT-01 | Phase 1 | Pending |
+| OUT-02 | Phase 1 | Pending |
+| OUT-03 | Phase 1 | Pending |
+| EX-01 | Phase 2 | Pending |
 
 **Coverage:**
 - v1 requirements: 6 total
-- Mapped to phases: 0
-- Unmapped: 6 ⚠️
+- Mapped to phases: 6
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-12*
-*Last updated: 2026-04-12 after initial definition*
+*Last updated: 2026-04-12 after roadmap creation*
