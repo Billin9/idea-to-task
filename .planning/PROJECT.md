@@ -20,7 +20,7 @@
 
 ### Active
 
-- [ ] examples 补充正反对比案例（平铺 vs 归纳）
+- [x] examples 补充正反对比案例（平铺 vs 归纳） — Validated in Phase 2: 示例校准
 
 ### Out of Scope
 
@@ -67,4 +67,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-12 after initialization*
+*Last updated: 2026-04-13 after Phase 2 completion — all phases complete*
