@@ -28,7 +28,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. decision-rules.md 中存在明确的「向上归纳」判断步骤，位于主题拆分步骤之前
 **Plans:** 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — decision-rules.md 新增归纳步骤 + output-template.md 新增归纳型模板与优先级规则
+- [x] 01-01-PLAN.md — decision-rules.md 新增归纳步骤 + output-template.md 新增归纳型模板与优先级规则
 - [ ] 01-02-PLAN.md — SKILL.md 工作流与核心原则更新 + 行为级验证 fixture
 
 ### Phase 2: 示例校准
