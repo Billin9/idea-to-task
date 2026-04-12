@@ -40,7 +40,7 @@ Plans:
   2. 正确示例的结构与 Phase 1 重构后的 output-template.md 保持一致（顶层意图 + 子任务线）
 **Plans:** 1 plan
 Plans:
-- [ ] 02-01-PLAN.md — 新增案例 7 正反对比 + 修复案例 2 归纳检查描述
+- [x] 02-01-PLAN.md — 新增案例 7 正反对比 + 修复案例 2 归纳检查描述
 
 ## Progress
 
