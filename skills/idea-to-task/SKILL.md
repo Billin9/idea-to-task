@@ -22,15 +22,18 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 - 只提醒真正会影响方向的高风险推断
 - 输出重点是任务推进，不是复述原话
 - 不暴露内部推理，不输出 `<thinking>` 或方法说明
+- **多主题输入先尝试向上归纳**：拆出多个主题后，先检查是否服务于同一更高目标——如果是，收敛为单顶层主题再展开子任务线；如果确实独立，按多主题分别输出。战略型输入作为特例，第一主题固定为顶层方案设计
 
 ## 工作流
 
 1. 识别输入类型：长文本、碎片短句或混合输入
-2. 判断主题密度：单主题、多相关主题、多不相关主题
-3. 判断可任务化程度：能否直接形成任务树
-4. 将原始表达归一为稳定意图
-5. 必要时拆主题，再分别生成任务树
-6. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
+2. **前置判断：是否为战略型输入**（多部门变革 + 需统一治理 + 跨季度），详见 [decision-rules.md](./references/decision-rules.md) 第 1 节
+3. 判断主题密度：单主题、多相关主题、多不相关主题
+4. 判断可任务化程度：能否直接形成任务树
+5. 将原始表达归一为稳定意图
+6. 必要时拆主题，再分别生成任务树（战略型输入第一主题固定为总体方案设计）
+7. **向上归纳检查**：对非战略型的多主题输入，检查各主题是否服务于同一更高目标，若是则收敛为单顶层主题（详见 [decision-rules.md](./references/decision-rules.md) 第 3 节）
+8. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
 
 遇到边界不清的输入时：
 
@@ -62,7 +65,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 
 ## 何时读取参考文件
 
-- 当你需要判断“该直接输出还是该补问”时，读取 [decision-rules.md](./references/decision-rules.md)
+- 当你需要判断”该直接输出还是该补问”，或需要执行向上归纳检查时，读取 [decision-rules.md](./references/decision-rules.md)
 - 当你需要稳定输出格式时，读取 [output-template.md](./references/output-template.md)
 - 当你需要校准风格或边界时，读取 [examples.md](./references/examples.md)
 
