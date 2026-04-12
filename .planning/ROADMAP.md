@@ -29,7 +29,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 Plans:
 - [x] 01-01-PLAN.md — decision-rules.md 新增归纳步骤 + output-template.md 新增归纳型模板与优先级规则
-- [ ] 01-02-PLAN.md — SKILL.md 工作流与核心原则更新 + 行为级验证 fixture
+- [x] 01-02-PLAN.md — SKILL.md 工作流与核心原则更新 + 行为级验证 fixture
 
 ### Phase 2: 示例校准
 **Goal**: examples.md 包含正反对比案例，模型能直接参照期望行为而不是仅靠规则推理
