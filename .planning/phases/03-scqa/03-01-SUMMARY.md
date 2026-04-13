@@ -55,9 +55,9 @@ completed: 2026-04-14
 Each task was committed atomically:
 
 1. **Task 1: 重构 decision-rules.md — 嵌入 SCQA 推演规则** - `b2be954` (feat)
-2. **Task 2: 重构 SKILL.md 工作流 — 替换为 SCQA 管线** - `907fb72` (feat)
+2. **Task 2: 重构 SKILL.md 工作流 — 替换为 SCQA 管线** - `907fb72`, `027c299`, `c713535` (feat/fix)
 
-**Plan metadata:** Pending summary commit
+**Plan metadata:** `76cfef8` (docs)
 
 ## Files Created/Modified
 
@@ -73,11 +73,32 @@ Each task was committed atomically:
 
 ## Deviations from Plan
 
-None - plan executed exactly as written.
+### Auto-fixed Issues
+
+**1. [Rule 1 - Bug] 补齐 SKILL.md 的计划级验收细节**
+- **Found during:** Task 2（重构 SKILL.md 工作流）
+- **Issue:** 初版工作流入口已切到 SCQA，但仍缺少一条通用补问边界和两条明确禁止项，导致执行计划中的字面校验条件没有全部覆盖。
+- **Fix:** 在 `SKILL.md` 中补上“多个主题彼此独立时先拆主题再判断是否补问”、禁止暴露方法论术语、禁止跳过 SCQA 推演直接输出任务树，并补齐对 `decision-rules.md 第 1/2/3 节` 的字面引用。
+- **Files modified:** `skills/idea-to-task/SKILL.md`
+- **Verification:** `grep -c "decision-rules.md 第 1 节|decision-rules.md 第 2 节|decision-rules.md 第 3 节" skills/idea-to-task/SKILL.md` 与 `uv run skills/idea-to-task/scripts/validate_skill.py skills/idea-to-task --strict`
+- **Committed in:** `027c299` (part of Task 2 commit)
+
+**2. [Rule 1 - Bug] 修复弱证据输出层级的跨文件漂移**
+- **Found during:** Phase 03 验证（`03-VERIFICATION.md`）
+- **Issue:** `decision-rules.md` 规定弱证据“只输出项目级”，但 `SKILL.md` 允许“项目级或里程碑级”，导致 `SCQA-04` 和路线图成功标准 4 无法通过。
+- **Fix:** 将 `SKILL.md` 的弱证据边界收紧为“只输出到项目级”，与 `decision-rules.md` 和 `ROADMAP.md` 保持一致。
+- **Files modified:** `skills/idea-to-task/SKILL.md`
+- **Verification:** `rg -n "弱证据|项目级|里程碑级|执行项级" skills/idea-to-task/SKILL.md skills/idea-to-task/references/decision-rules.md` 与 `uv run skills/idea-to-task/scripts/validate_skill.py skills/idea-to-task --strict`
+- **Committed in:** `c713535` (verification follow-up fix)
+
+---
+
+**Total deviations:** 2 auto-fixed (2 bugs)
+**Impact on plan:** 两次修正都用于消除提示层之间的契约缺口，不改变既定范围或阶段设计，只把 Phase 03 收敛到计划要求的严格边界。
 
 ## Issues Encountered
 
-- 工作区中存在与本计划无关的未提交修改：`.planning/STATE.md`。已按执行边界保留，未回滚、未纳入本计划提交。
+None
 
 ## User Setup Required
 

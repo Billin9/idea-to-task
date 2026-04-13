@@ -7,10 +7,10 @@
 
 ### SCQA 输入解析
 
-- [ ] **SCQA-01**: AI 能从碎片输入中推演 Situation（背景）和 Complication（矛盾/变化）
-- [ ] **SCQA-02**: AI 能从 S+C 推导隐含 Question，并基于全局推演 Answer（核心判断）作为金字塔顶点
-- [ ] **SCQA-03**: 当 SCQA 中关键要素完全缺失且影响方向判断时，触发最少量定向追问，与现有补问规则融合
-- [ ] **SCQA-04**: SCQA 完整度与证据强度关联——四要素齐全为强证据，S+C 有但 Q/A 需推演为中等，仅有 S 为弱证据
+- [x] **SCQA-01**: AI 能从碎片输入中推演 Situation（背景）和 Complication（矛盾/变化）
+- [x] **SCQA-02**: AI 能从 S+C 推导隐含 Question，并基于全局推演 Answer（核心判断）作为金字塔顶点
+- [x] **SCQA-03**: 当 SCQA 中关键要素完全缺失且影响方向判断时，触发最少量定向追问，与现有补问规则融合
+- [x] **SCQA-04**: SCQA 完整度与证据强度关联——四要素齐全为强证据，S+C 有但 Q/A 需推演为中等，仅有 S 为弱证据
 
 ### 金字塔输出
 
@@ -59,10 +59,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SCQA-01 | Phase 3 | Pending |
-| SCQA-02 | Phase 3 | Pending |
-| SCQA-03 | Phase 3 | Pending |
-| SCQA-04 | Phase 3 | Pending |
+| SCQA-01 | Phase 3 | Complete |
+| SCQA-02 | Phase 3 | Complete |
+| SCQA-03 | Phase 3 | Complete |
+| SCQA-04 | Phase 3 | Complete |
 | PYMD-01 | Phase 4 | Pending |
 | PYMD-02 | Phase 4 | Pending |
 | PYMD-03 | Phase 4 | Pending |
