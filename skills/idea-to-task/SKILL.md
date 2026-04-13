@@ -38,7 +38,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 
 - 如果 SCQA 推演中背景和矛盾清楚，但对核心判断的把握不足：先给基于最可能方向的初版任务树，再标注不确定性
 - 如果同一组背景和矛盾可以导出两条相反方向：明确给出双路径，不偷偷选边
-- 如果证据强度为弱：只输出到项目级或里程碑级
+- 如果证据强度为弱：只输出到项目级
 
 ## 补问规则
 
