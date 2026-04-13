@@ -2,7 +2,7 @@
 
 ## What This Is
 
-对现有 idea-to-task skill 的输出质量进行定向优化。这个 skill 把 CEO 的碎片想法整理成结构化任务树，当前问题是输出缺乏「向上归纳」能力——会把本该是父子关系的任务平铺成并列主题，核心判断也直接铺主线而不是先抓住统一的顶层意图。优化目标是让 skill 在输出时先找到一个统一的顶层意图，再向下展开子任务线。
+idea-to-task skill 的输出质量优化。该 skill 把 CEO 的碎片想法整理成结构化任务树。v1.0 已完成：新增「向上归纳」能力，使输出能先找到统一顶层意图再向下展开子任务线，并通过正反对比案例校准模型行为。
 
 ## Core Value
 
@@ -18,9 +18,9 @@
 - [x] 输出模板支持「单顶层主题 + 多子任务线」的结构 — Validated in Phase 1: 判断与输出重构
 - [x] decision-rules 增加「向上归纳」判断步骤 — Validated in Phase 1: 判断与输出重构
 
-### Active
+### Validated (continued)
 
-- [x] examples 补充正反对比案例（平铺 vs 归纳） — Validated in Phase 2: 示例校准
+- ✓ examples 补充正反对比案例（平铺 vs 归纳） — v1.0 Phase 2
 
 ### Out of Scope
 
@@ -33,8 +33,9 @@
 
 - 项目是一个 Claude Code skill，位于 `skills/idea-to-task/`
 - 核心文件：SKILL.md（主指令）、references/decision-rules.md（判断规则）、references/output-template.md（输出模板）、references/examples.md（示例）
-- 已有战略型输入检测逻辑（三条件 AND 判断），但问题出在检测之后的输出组织方式
-- 用户反馈的典型问题：一个"全公司 AI 转型"输入被拆成 6 个并列主题，实际上应该是 1 个顶层主题 + 5 条子任务线
+- v1.0 已完成：383 行 Markdown，3 个文件修改（decision-rules.md, output-template.md, examples.md），2 个 fixture 新增
+- 向上归纳检查已集成到 SKILL.md 工作流和 decision-rules.md 判断步骤中
+- examples.md 包含 7 个案例，含 1 组正反对比（案例 7）和战略型正反例（案例 5/6）
 
 ## Constraints
 
@@ -46,8 +47,11 @@
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| 只优化输出质量，不加新能力 | 用户明确要求聚焦输出质量 | — Pending |
-| 核心改动是增加「向上归纳」步骤 | 这是平铺问题的根因——缺少识别包含关系的逻辑 | — Pending |
+| 只优化输出质量，不加新能力 | 用户明确要求聚焦输出质量 | ✓ Good |
+| 核心改动是增加「向上归纳」步骤 | 这是平铺问题的根因——缺少识别包含关系的逻辑 | ✓ Good |
+| 归纳检查放在主题拆分之后 | 先拆后归比先归后拆更灵活 | ✓ Good |
+| 用正反对比案例而非纯规则校准 | 规则 + 示例双锚定降低模型偏差 | ✓ Good |
+| 案例中避免暴露内部术语 | 防止模型在输出中泄漏处理过程 | ✓ Good |
 
 ## Evolution
 
@@ -67,4 +71,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-13 after Phase 2 completion — all phases complete*
+*Last updated: 2026-04-13 after v1.0 milestone*
