@@ -59,28 +59,28 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SCQA-01 | — | Pending |
-| SCQA-02 | — | Pending |
-| SCQA-03 | — | Pending |
-| SCQA-04 | — | Pending |
-| PYMD-01 | — | Pending |
-| PYMD-02 | — | Pending |
-| PYMD-03 | — | Pending |
-| PYMD-04 | — | Pending |
-| QUAL-01 | — | Pending |
-| QUAL-02 | — | Pending |
-| QUAL-03 | — | Pending |
-| COMP-01 | — | Pending |
-| COMP-02 | — | Pending |
-| EXAM-01 | — | Pending |
-| EXAM-02 | — | Pending |
-| EXAM-03 | — | Pending |
+| SCQA-01 | Phase 3 | Pending |
+| SCQA-02 | Phase 3 | Pending |
+| SCQA-03 | Phase 3 | Pending |
+| SCQA-04 | Phase 3 | Pending |
+| PYMD-01 | Phase 4 | Pending |
+| PYMD-02 | Phase 4 | Pending |
+| PYMD-03 | Phase 4 | Pending |
+| PYMD-04 | Phase 4 | Pending |
+| QUAL-01 | Phase 5 | Pending |
+| QUAL-02 | Phase 5 | Pending |
+| QUAL-03 | Phase 5 | Pending |
+| COMP-01 | Phase 6 | Pending |
+| COMP-02 | Phase 6 | Pending |
+| EXAM-01 | Phase 6 | Pending |
+| EXAM-02 | Phase 6 | Pending |
+| EXAM-03 | Phase 6 | Pending |
 
 **Coverage:**
 - v2.0 requirements: 16 total
-- Mapped to phases: 0
-- Unmapped: 16 ⚠️
+- Mapped to phases: 16
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-04-14*
-*Last updated: 2026-04-14 after initial definition*
+*Last updated: 2026-04-14 after roadmap creation*
