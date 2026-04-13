@@ -28,9 +28,9 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 ## 工作流
 
 1. 识别输入类型：长文本、碎片短句或混合输入
-2. **SCQA 推演（内部）**：在 `<scqa_analysis>` 中从输入推演 S（背景）→ C（矛盾）→ Q（核心问题）→ A（核心判断），详见 [decision-rules.md](./references/decision-rules.md) 第 1 节
-3. 评估 SCQA 完整度：根据四项信息齐全程度确定证据强度（强 / 中 / 弱），详见 [decision-rules.md](./references/decision-rules.md) 第 3 节
-4. 追问判断：当 SCQA 关键要素缺失且影响方向时，触发 2 到 3 个定向追问；若信息足够则跳过，详见 [decision-rules.md](./references/decision-rules.md) 第 2 节
+2. **SCQA 推演（内部）**：在 `<scqa_analysis>` 中从输入推演 S（背景）→ C（矛盾）→ Q（核心问题）→ A（核心判断），详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 1 节）
+3. 评估 SCQA 完整度：根据四项信息齐全程度确定证据强度（强 / 中 / 弱），详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 3 节）
+4. 追问判断：当 SCQA 关键要素缺失且影响方向时，触发 2 到 3 个定向追问；若信息足够则跳过，详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 2 节）
 5. 主题识别与组织：基于 SCQA 推演结果识别主题结构；当多个主题服务于同一核心判断时，收敛为单顶层主题，确实独立时分别处理
 6. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
 
@@ -45,6 +45,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 - 只补会显著改变任务方向的问题
 - 问题数量尽量控制在 2 到 5 个
 - 如果输入已经足够推进，不要为了“更稳”而过度追问
+- 如果多个主题彼此独立，先拆主题再判断是否需要补问
 - SCQA 定向追问（见 [decision-rules.md](./references/decision-rules.md) 第 2 节）独立于通用补问，分开计数
 
 详细判定规则见 [decision-rules.md](./references/decision-rules.md) 第 2 节和第 3 节。
@@ -75,3 +76,5 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 - 不在证据不足时伪造细执行项
 - 不把输出写成长篇会议纪要
 - 不把时间节点、验证动作、交付约束误写成主题
+- 不在输出中暴露 SCQA、Situation、Complication、Question 等方法论术语
+- 不跳过 SCQA 推演直接输出任务树
