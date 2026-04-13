@@ -17,38 +17,37 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 ## 核心原则
 
 - 先给结论，再给结构，最后给动作
+- 所有输入统一经过 SCQA 推演，从推演结果自然导出处理方式，不做前置分类
 - 默认先产出，只有高风险歧义时才补问
 - 细化层级不能超过证据强度
 - 只提醒真正会影响方向的高风险推断
 - 输出重点是任务推进，不是复述原话
+- 内部推理使用 `<scqa_analysis>` 标签隔离，推理过程和方法论术语不暴露给用户
 - 不暴露内部推理，不输出 `<thinking>` 或方法说明
-- **多主题输入先尝试向上归纳**：拆出多个主题后，先检查是否服务于同一更高目标——如果是，收敛为单顶层主题再展开子任务线；如果确实独立，按多主题分别输出。战略型输入作为特例，第一主题固定为顶层方案设计
 
 ## 工作流
 
 1. 识别输入类型：长文本、碎片短句或混合输入
-2. **前置判断：是否为战略型输入**（多部门变革 + 需统一治理 + 跨季度），详见 [decision-rules.md](./references/decision-rules.md) 第 1 节
-3. 判断主题密度：单主题、多相关主题、多不相关主题
-4. 判断可任务化程度：能否直接形成任务树
-5. 将原始表达归一为稳定意图
-6. 必要时拆主题，再分别生成任务树（战略型输入第一主题固定为总体方案设计）
-7. **向上归纳检查**：对非战略型的多主题输入，检查各主题是否服务于同一更高目标，若是则收敛为单顶层主题（详见 [decision-rules.md](./references/decision-rules.md) 第 3 节）
-8. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
+2. **SCQA 推演（内部）**：在 `<scqa_analysis>` 中从输入推演 S（背景）→ C（矛盾）→ Q（核心问题）→ A（核心判断），详见 [decision-rules.md](./references/decision-rules.md) 第 1 节
+3. 评估 SCQA 完整度：根据四项信息齐全程度确定证据强度（强 / 中 / 弱），详见 [decision-rules.md](./references/decision-rules.md) 第 3 节
+4. 追问判断：当 SCQA 关键要素缺失且影响方向时，触发 2 到 3 个定向追问；若信息足够则跳过，详见 [decision-rules.md](./references/decision-rules.md) 第 2 节
+5. 主题识别与组织：基于 SCQA 推演结果识别主题结构；当多个主题服务于同一核心判断时，收敛为单顶层主题，确实独立时分别处理
+6. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
 
 遇到边界不清的输入时：
 
-- 如果只是信息不足，但主方向清楚：先给初版任务树，再补最少量问题
-- 如果一句话可以导出两条相反任务路径：明确给出双路径，不偷偷选边
-- 如果证据不足以支撑执行项：只输出到项目级或里程碑级
+- 如果 SCQA 推演中背景和矛盾清楚，但对核心判断的把握不足：先给基于最可能方向的初版任务树，再标注不确定性
+- 如果同一组背景和矛盾可以导出两条相反方向：明确给出双路径，不偷偷选边
+- 如果证据强度为弱：只输出到项目级或里程碑级
 
 ## 补问规则
 
 - 只补会显著改变任务方向的问题
 - 问题数量尽量控制在 2 到 5 个
 - 如果输入已经足够推进，不要为了“更稳”而过度追问
-- 如果多个主题彼此独立，先拆主题再判断是否需要补问
+- SCQA 定向追问（见 [decision-rules.md](./references/decision-rules.md) 第 2 节）独立于通用补问，分开计数
 
-详细判定规则见 [decision-rules.md](./references/decision-rules.md)。
+详细判定规则见 [decision-rules.md](./references/decision-rules.md) 第 2 节和第 3 节。
 
 ## 输出结构
 
@@ -65,7 +64,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 
 ## 何时读取参考文件
 
-- 当你需要判断”该直接输出还是该补问”，或需要执行向上归纳检查时，读取 [decision-rules.md](./references/decision-rules.md)
+- 当你需要执行 SCQA 推演、判断是否触发定向追问，或确认证据强度时，读取 [decision-rules.md](./references/decision-rules.md)
 - 当你需要稳定输出格式时，读取 [output-template.md](./references/output-template.md)
 - 当你需要校准风格或边界时，读取 [examples.md](./references/examples.md)
 
