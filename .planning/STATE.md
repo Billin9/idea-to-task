@@ -1,60 +1,34 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: verifying
-stopped_at: Phase 2 context gathered
-last_updated: "2026-04-13T03:19:36.561Z"
-last_activity: 2026-04-13
+milestone: v2.0
+milestone_name: 咨询方法论重构
+status: defining-requirements
+stopped_at: null
+last_updated: "2026-04-14"
+last_activity: 2026-04-14
 progress:
-  total_phases: 2
-  completed_phases: 2
-  total_plans: 3
-  completed_plans: 3
-  percent: 100
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-04-12)
+See: .planning/PROJECT.md (updated 2026-04-14)
 
-**Core value:** 输出必须先归纳出统一顶层意图，再向下展开子任务线
-**Current focus:** Phase 01 — judgment-output-refactor
+**Core value:** 输出必须用金字塔原理从顶层结论出发，向下分层展开战略支柱和关键任务
+**Current focus:** Defining requirements for v2.0
 
 ## Current Position
 
-Phase: 02
-Plan: Not started
-Status: Phase complete — ready for verification
-Last activity: 2026-04-13
-
-Progress: [░░░░░░░░░░] 0%
-
-## Performance Metrics
-
-**Velocity:**
-
-- Total plans completed: 3
-- Average duration: -
-- Total execution time: 0 hours
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 01 | 2 | - | - |
-| 02 | 1 | - | - |
-
-**Recent Trend:**
-
-- Last 5 plans: -
-- Trend: -
-
-*Updated after each plan completion*
-| Phase 01 P01 | 3min | 2 tasks | 2 files |
-| Phase 01 P02 | 3min | 3 tasks | 3 files |
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-04-14 — Milestone v2.0 started
 
 ## Accumulated Context
 
@@ -63,9 +37,9 @@ Progress: [░░░░░░░░░░] 0%
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- 初始化: 只优化输出质量，不加新能力；核心改动是增加「向上归纳」步骤
-- [Phase 01]: 归纳检查位于主题密度判断之后，仅适用非战略型多主题输入；判断标准为目标从属关系；模板优先级：战略型>归纳型>常规
-- [Phase 01]: 向上归纳检查插入为 SKILL.md 工作流第 7 步，核心原则泛化为多主题通用归纳原则
+- v2.0: 全面重构 skill 工作流，用咨询方法论（金字塔原理+SCQA+MECE）替换 v1.0 归纳逻辑
+- v2.0: SCQA 先推演后追问，MECE/So-what 作为内部逻辑不暴露
+- v2.0: 弹性 3x3 输出结构，保持任务树格式
 
 ### Pending Todos
 
@@ -77,6 +51,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-12T16:51:27.009Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-example-calibration/02-CONTEXT.md
+Last session: 2026-04-14
+Stopped at: Milestone v2.0 initialization
+Resume file: N/A
