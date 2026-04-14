@@ -46,7 +46,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 - 问题数量尽量控制在 2 到 5 个
 - 如果输入已经足够推进，不要为了“更稳”而过度追问
 - 如果多个主题彼此独立，先拆主题再判断是否需要补问
-- SCQA 定向追问（见 [decision-rules.md](./references/decision-rules.md) 第 2 节）独立于通用补问，分开计数
+- SCQA 定向追问（见 [decision-rules.md](./references/decision-rules.md) 第 2 节）与通用补问合并计数，总问题数不超过 5 个
 
 详细判定规则见 [decision-rules.md](./references/decision-rules.md) 第 2 节和第 3 节。
 
