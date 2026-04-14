@@ -32,7 +32,8 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 3. 评估 SCQA 完整度：根据四项信息齐全程度确定证据强度（强 / 中 / 弱），详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 3 节）
 4. 追问判断：当 SCQA 关键要素缺失且影响方向时，触发 2 到 3 个定向追问；若信息足够则跳过，详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 2 节）
 5. 主题识别与组织：基于 SCQA 推演结果识别主题结构；当多个主题服务于同一核心判断时，收敛为单顶层主题，确实独立时分别处理；每个主题作为同一核心判断下的分层支撑点，同层主题数量保持在 2 到 4 个，保持内部组织规则对用户透明，详见 [output-template.md](./references/output-template.md) 第 3 节
-6. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
+6. **内部质量校验（内部）**：在输出渲染之前串行执行两块对用户透明的校验：先在 `<mece_check>` 中校验同层互斥 / 同层完备 / 数量 2-4 / 分组一致性并处理 cardinality underflow / overflow，详见 [decision-rules.md](./references/decision-rules.md) 第 6 节；再在 `<sowhat_filter>` 中按 5 类空洞模式做字面扫描 + 语义自问双道过滤，详见 [decision-rules.md](./references/decision-rules.md) 第 7 节；两块推理产生的内部标签、字段和分组标记绝对不得进入最终输出
+7. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
 
 遇到边界不清的输入时：
 
