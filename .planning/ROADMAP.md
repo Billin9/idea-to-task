@@ -66,6 +66,12 @@ Plans:
 Plans:
 - [ ] 03-01-PLAN.md — 重构 decision-rules.md 和 SKILL.md，嵌入 SCQA 推演规则与管线工作流
 
+**Upstream Carryover** — 源自 [`.planning/phases/04-pyramid/04-REVIEWS.md`](./phases/04-pyramid/04-REVIEWS.md)（Phase 4 跨 AI 评审共识项）：
+- [HIGH] 新增行为 spot-check 验收框架：至少覆盖 5 类输入（战略型 / 归纳型 / 常规型 / 中等证据 3 层 / 极弱证据停 2 层）——本 phase 的 MECE/So-what 内部校验规则必须可通过这组输入验证，不能只依赖 grep
+- [HIGH] 增加混合信号优先级对抗样例：明确「战略型 > 归纳型 > 常规型」优先级矩阵，附 1 组「公司级治理信号 + 单顶层意图」的正反例，证明不会被错误压成「单主题（归纳）」
+- [MEDIUM] 补充 cardinality underflow/overflow 规则：同层候选 <2 或 >4 时的聚类/降级/补问策略（MECE 天然边界，纳入本 phase）
+- [MEDIUM] 量化证据强度判别准则：强证据 = 明确阶段性目标 + 具体资源约束 + 3+ 业务维度；弱证据 = 单句或单一行动意向（Gemini 建议）——避免层级抖动
+
 ### Phase 6: 示例校准与兼容性验证
 **Goal**: 用正反对比案例锚定完整管线行为，同时确保 v1.0 能力不退化
 **Depends on**: Phase 5
@@ -78,6 +84,13 @@ Plans:
 **Plans**: 1 plan
 Plans:
 - [ ] 03-01-PLAN.md — 重构 decision-rules.md 和 SKILL.md，嵌入 SCQA 推演规则与管线工作流
+
+**Upstream Carryover** — 源自 [`.planning/phases/04-pyramid/04-REVIEWS.md`](./phases/04-pyramid/04-REVIEWS.md)（Phase 4 跨 AI 评审共识项）：
+- [HIGH] Case 1-7 系统性重写为最高优先级：Phase 4 已确认新增 Case 8 + 旧 Case 1-7 的 1:7 比例会导致 Few-shot 污染，模型可能忽略新规则沿用旧格式——这是 v1.0→v2.0 最大的回归风险
+- [HIGH] 作为过渡缓冲，考虑在本 phase 起始阶段先给 Case 1-7 统一加 `(Legacy Context - Pending Update)` 前缀标记，或在 SKILL.md 中明确指示模型「优先参考 Case 8 的金字塔结构」（Gemini 建议）
+- [MEDIUM] 「案例正文禁术语」边界须显式声明：examples.md 作者侧标题含「金字塔」是允许的；黑名单针对的是「模型最终输出」而非「参考文件文本」本身——避免验收自撞
+- [MEDIUM] 扩大跨文件一致性扫清范围：04-02 只改了 SKILL.md step 5 和禁止词，四个文件里残留的旧「项目级 / 里程碑级 / 执行项级」表述（若有）需要在本 phase 一次性统一，或明确列出允许保留的历史文本白名单
+- [MEDIUM] Phase 4 deferred 的 v1.0 非战略型 fixture 回归验证：本 phase 的端到端 SCQA→金字塔→MECE→So-what 验证必须覆盖 v1.0 的清晰指令、简单任务类输入，确保新管线不退化
 
 ## Progress
 
