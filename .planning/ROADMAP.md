@@ -48,9 +48,11 @@ Plans:
   2. 弹性层级生效：弱证据输入产出 2 层结构，强证据输入产出 3-4 层结构
   3. 只有一套金字塔模板在运行，不再出现战略型/归纳型/常规型的分叉选择
   4. 输出保持现有六段式格式（核心判断 -> 主题拆分 -> 分层任务树 -> 执行建议 -> 风险 -> 下一步）
-**Plans**: 1 plan
+**Plans**: 3 plans
 Plans:
-- [x] 03-01-PLAN.md — 重构 decision-rules.md 和 SKILL.md，嵌入 SCQA 推演规则与管线工作流
+- [ ] 04-01-PLAN.md — 重写 output-template.md §3 为统一金字塔任务树模板（删除三模板分叉，引入弹性层级与条件分支）
+- [ ] 04-02-PLAN.md — SKILL.md 步骤 5 金字塔支撑约束 + decision-rules.md §3 层级术语替换 + §1 衔接引用
+- [ ] 04-03-PLAN.md — examples.md 新增案例 8「非金字塔平铺 vs 金字塔分层」正反对比 + v1.0 案例兼容性 spot-check
 
 ### Phase 5: MECE + So-what 内部质量校验
 **Goal**: AI 内部执行 MECE 互斥完备检查和 So-what 空洞过滤，输出质量可观测提升但过程不暴露
