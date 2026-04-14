@@ -31,7 +31,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 2. **SCQA 推演（内部）**：在 `<scqa_analysis>` 中从输入推演 S（背景）→ C（矛盾）→ Q（核心问题）→ A（核心判断），详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 1 节）
 3. 评估 SCQA 完整度：根据四项信息齐全程度确定证据强度（强 / 中 / 弱），详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 3 节）
 4. 追问判断：当 SCQA 关键要素缺失且影响方向时，触发 2 到 3 个定向追问；若信息足够则跳过，详见 [decision-rules.md](./references/decision-rules.md)（decision-rules.md 第 2 节）
-5. 主题识别与组织：基于 SCQA 推演结果识别主题结构；当多个主题服务于同一核心判断时，收敛为单顶层主题，确实独立时分别处理
+5. 主题识别与组织：基于 SCQA 推演结果识别主题结构；当多个主题服务于同一核心判断时，收敛为单顶层主题，确实独立时分别处理；每个主题作为同一核心判断下的分层支撑点，同层主题数量保持在 2 到 4 个，保持内部组织规则对用户透明，详见 [output-template.md](./references/output-template.md) 第 3 节
 6. 输出核心判断、主题拆分、任务树、执行建议、风险提醒、下一步动作
 
 遇到边界不清的输入时：
@@ -76,5 +76,6 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 - 不在证据不足时伪造细执行项
 - 不把输出写成长篇会议纪要
 - 不把时间节点、验证动作、交付约束误写成主题
-- 不在输出中暴露 SCQA、Situation、Complication、Question 等方法论术语
+- 不在输出中暴露 SCQA、Situation、Complication、Question、Answer 等方法论术语
+- 不在输出中使用「支柱」「金字塔」「pillar」「MECE」「So-what」等内部方法论术语
 - 不跳过 SCQA 推演直接输出任务树
