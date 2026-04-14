@@ -65,7 +65,7 @@ Plans:
 **Plans**: 4 plans
 Plans:
 - [x] 05-01-PLAN.md — decision-rules.md 新增 §6 MECE 四维校验 + cardinality underflow/overflow 兜底规则
-- [ ] 05-02-PLAN.md — decision-rules.md 新增 §7 So-what 空洞过滤 + §1 末尾混合信号优先级句
+- [x] 05-02-PLAN.md — decision-rules.md 新增 §7 So-what 空洞过滤 + §1 末尾混合信号优先级句
 - [ ] 05-03-PLAN.md — SKILL.md 工作流插入「内部质量校验」步骤 + 扩展禁词 + §6/§7 懒加载注册
 - [ ] 05-04-PLAN.md — 05-UAT.md 行为验证脚本：5 类基础 + 3 类对抗（混合信号 / Overflow / Underflow）
 
@@ -106,5 +106,5 @@ Phases execute in numeric order: 3 -> 4 -> 5 -> 6
 | 2. 示例校准 | v1.0 | 1/1 | Complete | 2026-04-13 |
 | 3. SCQA 输入解析层 | v2.0 | 1/1 | Complete | 2026-04-14 |
 | 4. 金字塔原理输出结构 | v2.0 | 3/3 | Complete | 2026-04-14 |
-| 5. MECE + So-what 内部质量校验 | v2.0 | 1/4 | In progress | - |
+| 5. MECE + So-what 内部质量校验 | v2.0 | 2/4 | In progress | - |
 | 6. 示例校准与兼容性验证 | v2.0 | 0/1 | Not started | - |
