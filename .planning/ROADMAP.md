@@ -20,7 +20,7 @@
 **Milestone Goal:** 用金字塔原理 + SCQA + MECE 等咨询方法论全面重构 idea-to-task skill 的工作流和输出逻辑
 
 - [x] **Phase 3: SCQA 输入解析层** - 从碎片输入推演 SCQA 框架，为金字塔构建提供顶点 — completed 2026-04-14
-- [ ] **Phase 4: 金字塔原理输出结构** - 用统一金字塔模板替代三套模板，从顶层结论分层展开
+- [x] **Phase 4: 金字塔原理输出结构** - 用统一金字塔模板替代三套模板，从顶层结论分层展开 — completed 2026-04-14
 - [ ] **Phase 5: MECE + So-what 内部质量校验** - 内部逻辑保障输出不重不漏、无空洞描述
 - [ ] **Phase 6: 示例校准与兼容性验证** - 正反对比案例锚定行为，v1.0 回归保障
 
@@ -50,9 +50,9 @@ Plans:
   4. 输出保持现有六段式格式（核心判断 -> 主题拆分 -> 分层任务树 -> 执行建议 -> 风险 -> 下一步）
 **Plans**: 3 plans
 Plans:
-- [ ] 04-01-PLAN.md — 重写 output-template.md §3 为统一金字塔任务树模板（删除三模板分叉，引入弹性层级与条件分支）
-- [ ] 04-02-PLAN.md — SKILL.md 步骤 5 金字塔支撑约束 + decision-rules.md §3 层级术语替换 + §1 衔接引用
-- [ ] 04-03-PLAN.md — examples.md 新增案例 8「非金字塔平铺 vs 金字塔分层」正反对比 + v1.0 案例兼容性 spot-check
+- [x] 04-01-PLAN.md — 重写 output-template.md §3 为统一金字塔任务树模板（删除三模板分叉，引入弹性层级与条件分支）
+- [x] 04-02-PLAN.md — SKILL.md 步骤 5 金字塔支撑约束 + decision-rules.md §3 层级术语替换 + §1 衔接引用
+- [x] 04-03-PLAN.md — examples.md 新增案例 8「非金字塔平铺 vs 金字塔分层」正反对比 + v1.0 案例兼容性 spot-check
 
 ### Phase 5: MECE + So-what 内部质量校验
 **Goal**: AI 内部执行 MECE 互斥完备检查和 So-what 空洞过滤，输出质量可观测提升但过程不暴露
@@ -89,6 +89,6 @@ Phases execute in numeric order: 3 -> 4 -> 5 -> 6
 | 1. 判断与输出重构 | v1.0 | 2/2 | Complete | 2026-04-13 |
 | 2. 示例校准 | v1.0 | 1/1 | Complete | 2026-04-13 |
 | 3. SCQA 输入解析层 | v2.0 | 1/1 | Complete | 2026-04-14 |
-| 4. 金字塔原理输出结构 | v2.0 | 0/TBD | Not started | - |
-| 5. MECE + So-what 内部质量校验 | v2.0 | 0/TBD | Not started | - |
-| 6. 示例校准与兼容性验证 | v2.0 | 0/TBD | Not started | - |
+| 4. 金字塔原理输出结构 | v2.0 | 3/3 | Complete | 2026-04-14 |
+| 5. MECE + So-what 内部质量校验 | v2.0 | 0/1 | Not started | - |
+| 6. 示例校准与兼容性验证 | v2.0 | 0/1 | Not started | - |

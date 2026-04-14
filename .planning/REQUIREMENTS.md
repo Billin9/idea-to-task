@@ -14,10 +14,10 @@
 
 ### 金字塔输出
 
-- [ ] **PYMD-01**: 输出从顶层结论（SCQA 的 Answer）出发，向下分层展开战略支柱→关键任务
-- [ ] **PYMD-02**: 弹性层级控制——每层 2-4 个支撑点，层级深度随证据强度伸缩（弱=2层，中=3层，强=4层）
-- [ ] **PYMD-03**: 统一金字塔模板替代现有战略型/归纳型/常规型三套模板，消除分叉逻辑
-- [ ] **PYMD-04**: 保持现有树形输出格式（核心判断→主题拆分→分层任务树→执行建议→风险→下一步）
+- [x] **PYMD-01**: 输出从顶层结论（SCQA 的 Answer）出发，向下分层展开战略支柱→关键任务
+- [x] **PYMD-02**: 弹性层级控制——每层 2-4 个支撑点，层级深度随证据强度伸缩（弱=2层，中=3层，强=4层）
+- [x] **PYMD-03**: 统一金字塔模板替代现有战略型/归纳型/常规型三套模板，消除分叉逻辑
+- [x] **PYMD-04**: 保持现有树形输出格式（核心判断→主题拆分→分层任务树→执行建议→风险→下一步）
 
 ### 内部质量校验
 
@@ -63,10 +63,10 @@
 | SCQA-02 | Phase 3 | Complete |
 | SCQA-03 | Phase 3 | Complete |
 | SCQA-04 | Phase 3 | Complete |
-| PYMD-01 | Phase 4 | Pending |
-| PYMD-02 | Phase 4 | Pending |
-| PYMD-03 | Phase 4 | Pending |
-| PYMD-04 | Phase 4 | Pending |
+| PYMD-01 | Phase 4 | Complete |
+| PYMD-02 | Phase 4 | Complete |
+| PYMD-03 | Phase 4 | Complete |
+| PYMD-04 | Phase 4 | Complete |
 | QUAL-01 | Phase 5 | Pending |
 | QUAL-02 | Phase 5 | Pending |
 | QUAL-03 | Phase 5 | Pending |
