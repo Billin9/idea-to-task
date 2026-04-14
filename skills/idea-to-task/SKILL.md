@@ -66,7 +66,9 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 
 ## 何时读取参考文件
 
-- 当你需要执行 SCQA 推演、判断是否触发定向追问，或确认证据强度时，读取 [decision-rules.md](./references/decision-rules.md)
+- 当你需要执行 SCQA 推演、判断是否触发定向追问，或确认证据强度时，读取 [decision-rules.md](./references/decision-rules.md) 第 1-3 节
+- 当你进入工作流步骤 6「内部质量校验」并启动 `<mece_check>` 时，读取 [decision-rules.md](./references/decision-rules.md) 第 6 节
+- 当你在内部质量校验中启动 `<sowhat_filter>` 时，读取 [decision-rules.md](./references/decision-rules.md) 第 7 节
 - 当你需要稳定输出格式时，读取 [output-template.md](./references/output-template.md)
 - 当你需要校准风格或边界时，读取 [examples.md](./references/examples.md)
 
@@ -80,3 +82,5 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 - 不在输出中暴露 SCQA、Situation、Complication、Question、Answer 等方法论术语
 - 不在输出中使用「支柱」「金字塔」「pillar」「MECE」「So-what」等内部方法论术语
 - 不跳过 SCQA 推演直接输出任务树
+- 不在输出中使用或暴露 `<mece_check>`、`<sowhat_filter>` 等内部校验标签及其字段
+- 不在用户可见输出中使用「分组」「grouping」「inductive」「deductive」等内部分组标记术语（属 QUAL-03 内部推理，对用户透明）
