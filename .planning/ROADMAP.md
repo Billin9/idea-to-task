@@ -62,9 +62,12 @@ Plans:
   1. 同层任务分支之间不出现明显重叠（如"提升效率"和"优化流程"不并列出现）
   2. 输出中不包含五类空洞模式：无主语口号、无对象动作、无验收里程碑、父子重复、无法行动描述
   3. 每层分支数量稳定在 2-4 个，不出现单分支或 5+ 分支的情况
-**Plans**: 1 plan
+**Plans**: 4 plans
 Plans:
-- [ ] 03-01-PLAN.md — 重构 decision-rules.md 和 SKILL.md，嵌入 SCQA 推演规则与管线工作流
+- [x] 05-01-PLAN.md — decision-rules.md 新增 §6 MECE 四维校验 + cardinality underflow/overflow 兜底规则
+- [ ] 05-02-PLAN.md — decision-rules.md 新增 §7 So-what 空洞过滤 + §1 末尾混合信号优先级句
+- [ ] 05-03-PLAN.md — SKILL.md 工作流插入「内部质量校验」步骤 + 扩展禁词 + §6/§7 懒加载注册
+- [ ] 05-04-PLAN.md — 05-UAT.md 行为验证脚本：5 类基础 + 3 类对抗（混合信号 / Overflow / Underflow）
 
 **Upstream Carryover** — 源自 [`.planning/phases/04-pyramid/04-REVIEWS.md`](./phases/04-pyramid/04-REVIEWS.md)（Phase 4 跨 AI 评审共识项）：
 - [HIGH] 新增行为 spot-check 验收框架：至少覆盖 5 类输入（战略型 / 归纳型 / 常规型 / 中等证据 3 层 / 极弱证据停 2 层）——本 phase 的 MECE/So-what 内部校验规则必须可通过这组输入验证，不能只依赖 grep
@@ -103,5 +106,5 @@ Phases execute in numeric order: 3 -> 4 -> 5 -> 6
 | 2. 示例校准 | v1.0 | 1/1 | Complete | 2026-04-13 |
 | 3. SCQA 输入解析层 | v2.0 | 1/1 | Complete | 2026-04-14 |
 | 4. 金字塔原理输出结构 | v2.0 | 3/3 | Complete | 2026-04-14 |
-| 5. MECE + So-what 内部质量校验 | v2.0 | 0/1 | Not started | - |
+| 5. MECE + So-what 内部质量校验 | v2.0 | 1/4 | In progress | - |
 | 6. 示例校准与兼容性验证 | v2.0 | 0/1 | Not started | - |
