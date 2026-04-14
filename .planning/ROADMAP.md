@@ -21,7 +21,7 @@
 
 - [x] **Phase 3: SCQA 输入解析层** - 从碎片输入推演 SCQA 框架，为金字塔构建提供顶点 — completed 2026-04-14
 - [x] **Phase 4: 金字塔原理输出结构** - 用统一金字塔模板替代三套模板，从顶层结论分层展开 — completed 2026-04-14
-- [ ] **Phase 5: MECE + So-what 内部质量校验** - 内部逻辑保障输出不重不漏、无空洞描述
+- [x] **Phase 5: MECE + So-what 内部质量校验** - 内部逻辑保障输出不重不漏、无空洞描述 — completed 2026-04-15
 - [ ] **Phase 6: 示例校准与兼容性验证** - 正反对比案例锚定行为，v1.0 回归保障
 
 ## Phase Details
@@ -67,7 +67,7 @@ Plans:
 - [x] 05-01-PLAN.md — decision-rules.md 新增 §6 MECE 四维校验 + cardinality underflow/overflow 兜底规则
 - [x] 05-02-PLAN.md — decision-rules.md 新增 §7 So-what 空洞过滤 + §1 末尾混合信号优先级句
 - [x] 05-03-PLAN.md — SKILL.md 工作流插入「内部质量校验」步骤 + 扩展禁词 + §6/§7 懒加载注册
-- [ ] 05-04-PLAN.md — 05-UAT.md 行为验证脚本：5 类基础 + 3 类对抗（混合信号 / Overflow / Underflow）
+- [x] 05-04-PLAN.md — 05-UAT.md 行为验证脚本：5 类基础 + 3 类对抗（混合信号 / Overflow / Underflow）
 
 **Upstream Carryover** — 源自 [`.planning/phases/04-pyramid/04-REVIEWS.md`](./phases/04-pyramid/04-REVIEWS.md)（Phase 4 跨 AI 评审共识项）：
 - [HIGH] 新增行为 spot-check 验收框架：至少覆盖 5 类输入（战略型 / 归纳型 / 常规型 / 中等证据 3 层 / 极弱证据停 2 层）——本 phase 的 MECE/So-what 内部校验规则必须可通过这组输入验证，不能只依赖 grep
@@ -106,5 +106,5 @@ Phases execute in numeric order: 3 -> 4 -> 5 -> 6
 | 2. 示例校准 | v1.0 | 1/1 | Complete | 2026-04-13 |
 | 3. SCQA 输入解析层 | v2.0 | 1/1 | Complete | 2026-04-14 |
 | 4. 金字塔原理输出结构 | v2.0 | 3/3 | Complete | 2026-04-14 |
-| 5. MECE + So-what 内部质量校验 | v2.0 | 3/4 | In progress | - |
+| 5. MECE + So-what 内部质量校验 | v2.0 | 4/4 | Complete | 2026-04-15 |
 | 6. 示例校准与兼容性验证 | v2.0 | 0/1 | Not started | - |
