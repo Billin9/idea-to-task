@@ -134,3 +134,15 @@ HIGH 级失败包括：
 - 四文件术语扫清 zero 断言失败。
 
 人工 UAT 可记录为 partial，但静态断言必须在 Phase 6 收尾前给出 PASS / FAIL 结论。
+
+### 静态断言预执行记录（2026-04-15）
+
+| 步骤 | 断言 | 结果 | 证据 |
+|------|------|------|------|
+| A | 四文件旧术语终扫 | PASS | `rg` 命中 0 行 |
+| B | SKILL.md examples 作者侧边界句 | PASS | `skills/idea-to-task/SKILL.md:87` 命中 `examples.md`、`作者侧`、`双重` |
+| C | examples.md 顶部术语边界声明 | PASS | `skills/idea-to-task/references/examples.md:3` |
+| D | examples.md 案例数量 | PASS | `rg -c '^## 案例'` 返回 `8` |
+| E | 战略型 Case 管线锚点 | PASS | `完整管线演示` 命中 2 行 |
+
+结论：Phase 6 静态门禁达成。动态回归（v1.0 fixture 运行时输出复核）交由 `06-VERIFICATION.md` 验证阶段记录。
