@@ -35,9 +35,11 @@
   2. AI 能从 S+C 推导出隐含 Question 并给出 Answer，Answer 作为输出的核心判断呈现
   3. 当输入信息严重不足（仅有模糊 Situation）时，AI 触发 2-3 个定向追问而非强行输出
   4. SCQA 完整度自动关联证据强度：四要素齐全输出到执行项层级，仅有 S 则只输出到项目层级
-**Plans**: 1 plan
+**Plans**: 3 plans
 Plans:
-- [ ] 03-01-PLAN.md — 重构 decision-rules.md 和 SKILL.md，嵌入 SCQA 推演规则与管线工作流
+- [ ] 06-01-PLAN.md — examples.md 全量重写 8 个新案例 + 顶部术语边界声明，锚定 Phase 5 UAT 5 类 + EXAM-01/02/03 三个正反对比封闭点
+- [ ] 06-02-PLAN.md — SKILL.md 禁词段扩展 examples 作者侧边界句 + SKILL/decision-rules/output-template 三文件旧术语一致性扫清
+- [ ] 06-03-PLAN.md — 新建 06-UAT.md 承接 Phase 5 框架，新增 v1.0 三 fixture 三维回归段 + 端到端管线段 + 四文件术语终扫断言
 
 ### Phase 4: 金字塔原理输出结构
 **Goal**: 输出从顶层结论（SCQA 的 Answer）出发，按金字塔原理向下分层展开为战略支柱和关键任务
@@ -84,9 +86,11 @@ Plans:
   2. v1.0 已有的非战略型 fixture（简单任务、清晰指令类输入）通过回归验证，输出质量不退化
   3. 不兼容新方法论的旧 fixture/examples 已按金字塔框架重写，无残留的旧模板痕迹
   4. 端到端验证：一段真实 CEO 碎片输入经过完整管线（SCQA -> 金字塔 -> MECE -> So-what）产出结构化输出
-**Plans**: 1 plan
+**Plans**: 3 plans
 Plans:
-- [ ] 03-01-PLAN.md — 重构 decision-rules.md 和 SKILL.md，嵌入 SCQA 推演规则与管线工作流
+- [ ] 06-01-PLAN.md — examples.md 全量重写 8 个新案例 + 顶部术语边界声明，锚定 Phase 5 UAT 5 类 + EXAM-01/02/03 三个正反对比封闭点
+- [ ] 06-02-PLAN.md — SKILL.md 禁词段扩展 examples 作者侧边界句 + SKILL/decision-rules/output-template 三文件旧术语一致性扫清
+- [ ] 06-03-PLAN.md — 新建 06-UAT.md 承接 Phase 5 框架，新增 v1.0 三 fixture 三维回归段 + 端到端管线段 + 四文件术语终扫断言
 
 **Upstream Carryover** — 源自 [`.planning/phases/04-pyramid/04-REVIEWS.md`](./phases/04-pyramid/04-REVIEWS.md)（Phase 4 跨 AI 评审共识项）：
 - [HIGH] Case 1-7 系统性重写为最高优先级：Phase 4 已确认新增 Case 8 + 旧 Case 1-7 的 1:7 比例会导致 Few-shot 污染，模型可能忽略新规则沿用旧格式——这是 v1.0→v2.0 最大的回归风险
