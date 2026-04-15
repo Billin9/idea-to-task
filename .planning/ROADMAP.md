@@ -39,7 +39,7 @@
 Plans:
 - [x] 06-01-PLAN.md — examples.md 全量重写 8 个新案例 + 顶部术语边界声明，锚定 Phase 5 UAT 5 类 + EXAM-01/02/03 三个正反对比封闭点
 - [x] 06-02-PLAN.md — SKILL.md 禁词段扩展 examples 作者侧边界句 + SKILL/decision-rules/output-template 三文件旧术语一致性扫清
-- [ ] 06-03-PLAN.md — 新建 06-UAT.md 承接 Phase 5 框架，新增 v1.0 三 fixture 三维回归段 + 端到端管线段 + 四文件术语终扫断言
+- [x] 06-03-PLAN.md — 新建 06-UAT.md 承接 Phase 5 框架，新增 v1.0 三 fixture 三维回归段 + 端到端管线段 + 四文件术语终扫断言
 
 ### Phase 4: 金字塔原理输出结构
 **Goal**: 输出从顶层结论（SCQA 的 Answer）出发，按金字塔原理向下分层展开为战略支柱和关键任务
