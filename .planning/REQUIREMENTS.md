@@ -21,9 +21,9 @@
 
 ### 内部质量校验
 
-- [ ] **QUAL-01**: MECE 内部校验——检查同层分支互斥性、完备性、分组数量（2-4）和分组逻辑一致性
-- [ ] **QUAL-02**: So-what 内部过滤——剔除五类空洞模式（无主语口号、无对象动作、无验收里程碑、父子重复、无法行动描述）
-- [ ] **QUAL-03**: 归纳/演绎分组标记——AI 内部标记水平支撑点的分组逻辑类型，辅助选择正确分组方式
+- [x] **QUAL-01**: MECE 内部校验——检查同层分支互斥性、完备性、分组数量（2-4）和分组逻辑一致性
+- [x] **QUAL-02**: So-what 内部过滤——剔除五类空洞模式（无主语口号、无对象动作、无验收里程碑、父子重复、无法行动描述）
+- [x] **QUAL-03**: 归纳/演绎分组标记——AI 内部标记水平支撑点的分组逻辑类型，辅助选择正确分组方式
 
 ### 兼容性
 
@@ -67,9 +67,9 @@
 | PYMD-02 | Phase 4 | Complete |
 | PYMD-03 | Phase 4 | Complete |
 | PYMD-04 | Phase 4 | Complete |
-| QUAL-01 | Phase 5 | Pending |
-| QUAL-02 | Phase 5 | Pending |
-| QUAL-03 | Phase 5 | Pending |
+| QUAL-01 | Phase 5 | Complete |
+| QUAL-02 | Phase 5 | Complete |
+| QUAL-03 | Phase 5 | Complete |
 | COMP-01 | Phase 6 | Complete |
 | COMP-02 | Phase 6 | Complete |
 | EXAM-01 | Phase 6 | Complete |
@@ -83,4 +83,4 @@
 
 ---
 *Requirements defined: 2026-04-14*
-*Last updated: 2026-04-15 after Phase 6 verification*
+*Last updated: 2026-04-15 after Phase 5 VERIFICATION backfill during v2.0 milestone audit*
