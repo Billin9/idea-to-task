@@ -36,7 +36,7 @@ Existing task decomposition tools are often just "flat lists"—you give them th
 
 ## How It Works
 
-`idea-to-task` runs on the GSD framework as a specialized AI Skill integrated into runtimes like Claude Code and Antigravity.
+`idea-to-task` is a general AI Skill that supports integration with multiple runtimes including Claude Code, Codex, Antigravity, OpenCode, and OpenClaw.
 
 ### Core Methodology Pipeline
 
@@ -85,7 +85,7 @@ Call it directly in Claude Code or Antigravity:
 
 - **Instruction Engineering**: Advanced Markdown + XML structure prompts
 - **Validation Tooling**: Python (uv runtime)
-- **Runtime**: Node.js (CommonJS) / GSD Framework
+- **Runtime**: Node.js (CommonJS) / Supports multiple AI assistant runtimes
 - **Copywriting Standard**: Consulting industry standard (McKinsey Style)
 
 ---

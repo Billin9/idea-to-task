@@ -36,7 +36,7 @@
 
 ## 它是怎么工作的
 
-`idea-to-task` 运行在 GSD 框架之上，作为专门的 AI Skill 集成到 Claude Code、Antigravity 等运行时中。
+`idea-to-task` 是一个通用的 AI Skill，集成支持 Claude Code、Codex、Antigravity、OpenCode、OpenClaw 等多种运行时。
 
 ### 核心方法论管线
 
@@ -85,7 +85,7 @@ git clone https://github.com/Billin9/idea-to-task.git skills/idea-to-task
 
 - **指令工程**: 高级 Markdown + XML 结构提示词
 - **验证工具**: Python (uv runtime)
-- **运行时**: Node.js (CommonJS) / GSD Framework
+- **运行时**: Node.js (CommonJS) / 支持多种 AI 助手运行时
 - **文案规范**: 咨询行业标准 (McKinsey Style)
 
 ---
