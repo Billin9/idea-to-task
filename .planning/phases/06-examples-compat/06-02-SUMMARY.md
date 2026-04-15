@@ -56,7 +56,7 @@ completed: 2026-04-15
 
 ## Accomplishments
 
-- 在 `SKILL.md`「## 明确禁止」段新增 `references/examples.md` 作者侧边界句，明确作者侧标题、注释块不属于正文禁词范围。
+- 在 `SKILL.md`「## 明确禁止」段新增 `skills/idea-to-task/references/examples.md` 作者侧边界句，明确作者侧标题、注释块不属于正文禁词范围。
 - 将 `SKILL.md` 中两个运行时旧层级术语替换为「主题 → 里程碑 → 执行项」与「主题层」，保留弱证据层级截断语义。
 - 复核 `decision-rules.md` 与 `output-template.md` 无旧术语命中，且 `output-template.md` 六段式结构未被破坏。
 
@@ -72,7 +72,7 @@ completed: 2026-04-15
 
 ## Decisions Made
 
-- 作者侧方法论术语豁免仅适用于 `references/examples.md` 的标题、小节标题和作者注释块；案例正文仍执行完整禁词清单。
+- 作者侧方法论术语豁免仅适用于 `skills/idea-to-task/references/examples.md` 的标题、小节标题和作者注释块；案例正文仍执行完整禁词清单。
 - `decision-rules.md` 和 `output-template.md` 在旧术语扫描中为零命中，因此保持不改，避免制造无意义文档 churn。
 - 按用户提供的执行范围，本计划不修改 `.planning/STATE.md` 或 `.planning/ROADMAP.md`；当前已有的 `.planning/STATE.md` 工作区改动不属于本计划提交范围。
 
@@ -90,7 +90,7 @@ None - plan executed exactly as written.
 
 ## Issues Encountered
 
-- 工作开始前已有 `.planning/STATE.md` 与 `references/examples.md` 工作区改动；本计划未修改也未回滚这些改动。
+- 工作开始前已有 `.planning/STATE.md` 与 `skills/idea-to-task/references/examples.md` 工作区改动；本计划未修改也未回滚这些改动。
 - 提交 Task 1 后仅剩 `.planning/STATE.md` 为外部未提交改动；按本计划写入范围继续忽略。
 
 ## Known Stubs

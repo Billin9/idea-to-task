@@ -77,7 +77,7 @@ completed: 2026-04-15
 - 3 个对比案例保留 `### ❌` / `### ✅` 小节标题，以便人工和脚本快速定位结构差异。
 - 极弱证据案例保留固定验收句「输入不足以支撑多主题拆分」，用于后续 UAT 静态断言。
 
-## Verification
+## Checks
 
 - `rg -c '^## 案例' skills/idea-to-task/references/examples.md`：返回 `8`。
 - `rg -n '^## 术语边界声明' skills/idea-to-task/references/examples.md`：返回 1 行。
@@ -85,6 +85,10 @@ completed: 2026-04-15
 - `rg -n '^### ❌|^### ✅' skills/idea-to-task/references/examples.md`：各返回 3 行。
 - `rg -n '项目级|里程碑级|执行项级' skills/idea-to-task/references/examples.md`：零命中。
 - `perl` 正文禁词抽检脚本：排除作者侧注释和正反对比标题后，输出正文无禁词命中。
+
+## Self-Check
+
+PASSED - examples.md、06-01-SUMMARY.md 与计划验收条件一致，未发现未完成项。
 
 ## Deviations from Plan
 
