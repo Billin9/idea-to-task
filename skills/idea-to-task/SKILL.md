@@ -84,3 +84,4 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 - 不跳过 SCQA 推演直接输出任务树
 - 不在输出中使用或暴露 `<mece_check>`、`<sowhat_filter>` 等内部校验标签及其字段
 - 不在用户可见输出中使用「分组」「grouping」「inductive」「deductive」等内部分组标记术语（属 QUAL-03 内部推理，对用户透明）
+- `references/examples.md` 的作者侧标题、小节标题、作者注释块（如 HTML 注释 `<!-- -->` 或「说明：」前缀）允许出现 SCQA、Situation、Complication、Question、Answer、金字塔、支柱、MECE、So-what 等方法论术语，不在本禁词范围内；examples.md 的案例正文（即模拟模型输出的六段式主体）遵循本节完整禁词清单。该边界同时在 examples.md 顶部「术语边界声明」段再次声明，形成双重保障。
