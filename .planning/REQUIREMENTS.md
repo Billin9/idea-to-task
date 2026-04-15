@@ -27,14 +27,14 @@
 
 ### 兼容性
 
-- [ ] **COMP-01**: 现有非战略型输入处理逻辑不被破坏，v1.0 fixture 作为回归基线
-- [ ] **COMP-02**: 能复用的 fixture 和 examples 保留，不兼容的按新方法论重写
+- [x] **COMP-01**: 现有非战略型输入处理逻辑不被破坏，v1.0 fixture 作为回归基线
+- [x] **COMP-02**: 能复用的 fixture 和 examples 保留，不兼容的按新方法论重写
 
 ### 示例校准
 
-- [ ] **EXAM-01**: 为 SCQA 解析提供至少 1 组正反对比案例（无 SCQA 分析的平铺 vs 有 SCQA 的结构化）
-- [ ] **EXAM-02**: 为金字塔结构提供至少 1 组正反对比案例（非金字塔 vs 金字塔输出）
-- [ ] **EXAM-03**: 为 MECE 检查提供至少 1 组正反对比案例（有重叠遗漏 vs 不重不漏）
+- [x] **EXAM-01**: 为 SCQA 解析提供至少 1 组正反对比案例（无 SCQA 分析的平铺 vs 有 SCQA 的结构化）
+- [x] **EXAM-02**: 为金字塔结构提供至少 1 组正反对比案例（非金字塔 vs 金字塔输出）
+- [x] **EXAM-03**: 为 MECE 检查提供至少 1 组正反对比案例（有重叠遗漏 vs 不重不漏）
 
 ## Future Requirements
 
@@ -70,11 +70,11 @@
 | QUAL-01 | Phase 5 | Pending |
 | QUAL-02 | Phase 5 | Pending |
 | QUAL-03 | Phase 5 | Pending |
-| COMP-01 | Phase 6 | Pending |
-| COMP-02 | Phase 6 | Pending |
-| EXAM-01 | Phase 6 | Pending |
-| EXAM-02 | Phase 6 | Pending |
-| EXAM-03 | Phase 6 | Pending |
+| COMP-01 | Phase 6 | Complete |
+| COMP-02 | Phase 6 | Complete |
+| EXAM-01 | Phase 6 | Complete |
+| EXAM-02 | Phase 6 | Complete |
+| EXAM-03 | Phase 6 | Complete |
 
 **Coverage:**
 - v2.0 requirements: 16 total
@@ -83,4 +83,4 @@
 
 ---
 *Requirements defined: 2026-04-14*
-*Last updated: 2026-04-14 after roadmap creation*
+*Last updated: 2026-04-15 after Phase 6 verification*
