@@ -11,7 +11,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 
 - 会议记录、聊天原文、语音转文字、碎片短句
 - 多个主题混在一起，需要拆主线和次线
-- 需要把模糊方向整理成项目级、里程碑级、执行项级任务
+- 需要把模糊方向整理成主题 → 里程碑 → 执行项的分层任务
 - 需要判断是直接输出结果，还是先补少量关键问题
 
 ## 核心原则
@@ -39,7 +39,7 @@ description: Use when the user wants to turn messy CEO or founder chat fragments
 
 - 如果 SCQA 推演中背景和矛盾清楚，但对核心判断的把握不足：先给基于最可能方向的初版任务树，再标注不确定性
 - 如果同一组背景和矛盾可以导出两条相反方向：明确给出双路径，不偷偷选边
-- 如果证据强度为弱：只输出到项目级
+- 如果证据强度为弱：只输出到主题层
 
 ## 补问规则
 
