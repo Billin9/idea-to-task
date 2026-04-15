@@ -37,8 +37,8 @@
   4. SCQA 完整度自动关联证据强度：四要素齐全输出到执行项层级，仅有 S 则只输出到项目层级
 **Plans**: 3 plans
 Plans:
-- [ ] 06-01-PLAN.md — examples.md 全量重写 8 个新案例 + 顶部术语边界声明，锚定 Phase 5 UAT 5 类 + EXAM-01/02/03 三个正反对比封闭点
-- [ ] 06-02-PLAN.md — SKILL.md 禁词段扩展 examples 作者侧边界句 + SKILL/decision-rules/output-template 三文件旧术语一致性扫清
+- [x] 06-01-PLAN.md — examples.md 全量重写 8 个新案例 + 顶部术语边界声明，锚定 Phase 5 UAT 5 类 + EXAM-01/02/03 三个正反对比封闭点
+- [x] 06-02-PLAN.md — SKILL.md 禁词段扩展 examples 作者侧边界句 + SKILL/decision-rules/output-template 三文件旧术语一致性扫清
 - [ ] 06-03-PLAN.md — 新建 06-UAT.md 承接 Phase 5 框架，新增 v1.0 三 fixture 三维回归段 + 端到端管线段 + 四文件术语终扫断言
 
 ### Phase 4: 金字塔原理输出结构
@@ -88,8 +88,8 @@ Plans:
   4. 端到端验证：一段真实 CEO 碎片输入经过完整管线（SCQA -> 金字塔 -> MECE -> So-what）产出结构化输出
 **Plans**: 3 plans
 Plans:
-- [ ] 06-01-PLAN.md — examples.md 全量重写 8 个新案例 + 顶部术语边界声明，锚定 Phase 5 UAT 5 类 + EXAM-01/02/03 三个正反对比封闭点
-- [ ] 06-02-PLAN.md — SKILL.md 禁词段扩展 examples 作者侧边界句 + SKILL/decision-rules/output-template 三文件旧术语一致性扫清
+- [x] 06-01-PLAN.md — examples.md 全量重写 8 个新案例 + 顶部术语边界声明，锚定 Phase 5 UAT 5 类 + EXAM-01/02/03 三个正反对比封闭点
+- [x] 06-02-PLAN.md — SKILL.md 禁词段扩展 examples 作者侧边界句 + SKILL/decision-rules/output-template 三文件旧术语一致性扫清
 - [ ] 06-03-PLAN.md — 新建 06-UAT.md 承接 Phase 5 框架，新增 v1.0 三 fixture 三维回归段 + 端到端管线段 + 四文件术语终扫断言
 
 **Upstream Carryover** — 源自 [`.planning/phases/04-pyramid/04-REVIEWS.md`](./phases/04-pyramid/04-REVIEWS.md)（Phase 4 跨 AI 评审共识项）：
