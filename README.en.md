@@ -74,12 +74,12 @@ npx skills add https://github.com/Billin9/idea-to-task --skill idea-to-task
 
 Option 2: Manual install
 
-The repository root ships with development scaffolding; only `skills/idea-to-task/` is the actual skill:
-
 ```bash
-cd your-project
-git clone --depth 1 https://github.com/Billin9/idea-to-task.git .i2t-tmp
-mkdir -p skills && mv .i2t-tmp/skills/idea-to-task skills/ && rm -rf .i2t-tmp
+# Clone
+git clone https://github.com/Billin9/idea-to-task.git
+
+# Copy to Claude Code skills directory
+cp -r idea-to-task/skills/idea-to-task ~/.claude/skills/
 ```
 
 No extra dependencies — works out of the box.
