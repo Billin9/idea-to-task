@@ -74,21 +74,12 @@ npx skills add https://github.com/Billin9/idea-to-task --skill idea-to-task
 
 Option 2: Manual install
 
-The repository root ships with development scaffolding (`.claude/`, `.planning/`, etc.); only `skills/idea-to-task/` is the actual skill. Use sparse-checkout to extract it precisely:
+The repository root ships with development scaffolding; only `skills/idea-to-task/` is the actual skill:
 
 ```bash
-# Enter your project directory
 cd your-project
-
-# Fetch only the skills/idea-to-task subdirectory
-git clone --depth 1 --filter=blob:none --sparse \
-  https://github.com/Billin9/idea-to-task.git .tmp-idea-to-task
-(cd .tmp-idea-to-task && git sparse-checkout set skills/idea-to-task)
-
-# Move it into your project's skills directory and clean up
-mkdir -p skills
-mv .tmp-idea-to-task/skills/idea-to-task skills/idea-to-task
-rm -rf .tmp-idea-to-task
+git clone --depth 1 https://github.com/Billin9/idea-to-task.git .i2t-tmp
+mkdir -p skills && mv .i2t-tmp/skills/idea-to-task skills/ && rm -rf .i2t-tmp
 ```
 
 No extra dependencies — works out of the box.

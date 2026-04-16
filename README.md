@@ -73,21 +73,12 @@ npx skills add https://github.com/Billin9/idea-to-task --skill idea-to-task
 
 方式二：手动安装
 
-仓库根目录包含开发脚手架（`.claude/`、`.planning/` 等），真正需要的 skill 仅在 `skills/idea-to-task/` 子目录下。使用 sparse-checkout 精准提取：
+仓库根目录包含开发脚手架，真正需要的 skill 仅在 `skills/idea-to-task/` 子目录下：
 
 ```bash
-# 进入你的项目目录
 cd your-project
-
-# 仅拉取 skills/idea-to-task 子目录
-git clone --depth 1 --filter=blob:none --sparse \
-  https://github.com/Billin9/idea-to-task.git .tmp-idea-to-task
-(cd .tmp-idea-to-task && git sparse-checkout set skills/idea-to-task)
-
-# 搬入本项目的 skills 目录并清理
-mkdir -p skills
-mv .tmp-idea-to-task/skills/idea-to-task skills/idea-to-task
-rm -rf .tmp-idea-to-task
+git clone --depth 1 https://github.com/Billin9/idea-to-task.git .i2t-tmp
+mkdir -p skills && mv .i2t-tmp/skills/idea-to-task skills/ && rm -rf .i2t-tmp
 ```
 
 无需额外依赖，开箱即用。
