@@ -61,15 +61,24 @@ Existing task decomposition tools are often just "flat lists"—you give them th
 
 ### Installation
 
-Ensure you have [GSD](https://github.com/gsd-build/get-shit-done) installed.
+The repository root ships with development scaffolding (`.claude/`, `.planning/`, etc.); only `skills/idea-to-task/` is the actual skill. Use sparse-checkout to extract it precisely:
 
 ```bash
 # Enter your project directory
 cd your-project
 
-# Clone this skill to the skills directory
-git clone https://github.com/Billin9/idea-to-task.git skills/idea-to-task
+# Fetch only the skills/idea-to-task subdirectory
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/Billin9/idea-to-task.git .tmp-idea-to-task
+(cd .tmp-idea-to-task && git sparse-checkout set skills/idea-to-task)
+
+# Move it into your project's skills directory and clean up
+mkdir -p skills
+mv .tmp-idea-to-task/skills/idea-to-task skills/idea-to-task
+rm -rf .tmp-idea-to-task
 ```
+
+No extra dependencies — works out of the box.
 
 ### Usage
 
@@ -83,9 +92,9 @@ Call it directly in Claude Code or Antigravity:
 
 ## Tech Stack
 
-- **Instruction Engineering**: Advanced Markdown + XML structure prompts
-- **Validation Tooling**: Python (uv runtime)
-- **Runtime**: Node.js (CommonJS) / Supports multiple AI assistant runtimes
+- **Instruction Engineering**: Advanced Markdown + XML structured prompts
+- **Compatible Runtimes**: Claude Code, Codex, Gemini, Antigravity, OpenCode, OpenClaw, and other AI assistants (the skill itself is pure prompt — no runtime required)
+- **Development Toolchain**: Python (uv) for skill structure validation; Node.js only for the bundled GSD workflow scripts — end users don't need to install it
 - **Copywriting Standard**: Consulting industry standard (McKinsey Style)
 
 ---

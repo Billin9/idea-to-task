@@ -36,15 +36,15 @@
 
 ## 它是怎么工作的
 
-`idea-to-task` 是一个通用的 AI Skill，集成支持 Claude Code、Codex、Antigravity、OpenCode、OpenClaw 等多种运行时。
+`idea-to-task` 是一个通用的 AI Skill，集成支持 Claude Code、Codex、Gemini、Antigravity、OpenCode、OpenClaw 等多种运行时。
 
 ### 核心方法论管线
 
-1.  **SCQA 内部推演**：AI 自动基于输入推演「情境 (S)、冲突 (C)、问题 (Q)、回答 (A)」，理清业务脉络。信息不足时，会精准追问而非猜测。
-2.  **证据强度映射**：根据输入来源的确定性，动态调整任务树的深度（2-4 层）。
-3.  **金字塔分层构建**：从唯一的顶层结论（Center Point）出发，向下分层展开战略支柱和关键任务。
-4.  **MECE 四维校验**：内部强制执行「相互独立，完全穷尽」校验，防止逻辑重叠或遗漏。
-5.  **So-what 空洞过滤**：自动剔除诸如「加强协作」、「优化体验」等无意义的描述性空洞，确保每一项任务都是可执行的。
+1. **SCQA 内部推演**：AI 自动基于输入推演「情境 (S)、冲突 (C)、问题 (Q)、回答 (A)」，理清业务脉络。信息不足时，会精准追问而非猜测。
+2. **证据强度映射**：根据输入来源的确定性，动态调整任务树的深度（2-4 层）。
+3. **金字塔分层构建**：从唯一的顶层结论（Center Point）出发，向下分层展开战略支柱和关键任务。
+4. **MECE 四维校验**：内部强制执行「相互独立，完全穷尽」校验，防止逻辑重叠或遗漏。
+5. **So-what 空洞过滤**：自动剔除诸如「加强协作」、「优化体验」等无意义的描述性空洞，确保每一项任务都是可执行的。
 
 ---
 
@@ -52,7 +52,6 @@
 
 - **六段式结构化输出**：核心判断 → 主题拆分 → 分层任务树 → 执行建议 → 风险与高风险推断 → 下一步动作。
 - **中文原生优化**：深度适配中文语境下的隐喻逻辑与表达习惯。
-- **原子化 Git 提交支持**：与 GSD 深度集成，支持每个任务项的独立提交与追踪。
 - **严谨的禁词与边界控制**：确保输出专业、冷静、去 AI 化。
 
 ---
@@ -61,19 +60,38 @@
 
 ### 安装
 
-确保你已经安装了 [GSD](https://github.com/gsd-build/get-shit-done)。
+方式一：一键安装（推荐）
+访问 skills.sh 页面，按提示一键安装。
+
+方式二：命令行安装
+```bash
+npx skills add https://github.com/Billin9/idea-to-task --skill idea-to-task
+```
+
+方式三：手动安装
+
+仓库根目录包含开发脚手架（`.claude/`、`.planning/` 等），真正需要的 skill 仅在 `skills/idea-to-task/` 子目录下。使用 sparse-checkout 精准提取：
 
 ```bash
 # 进入你的项目目录
 cd your-project
 
-# 复制此 skill 到 skills 目录
-git clone https://github.com/Billin9/idea-to-task.git skills/idea-to-task
+# 仅拉取 skills/idea-to-task 子目录
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/Billin9/idea-to-task.git .tmp-idea-to-task
+(cd .tmp-idea-to-task && git sparse-checkout set skills/idea-to-task)
+
+# 搬入本项目的 skills 目录并清理
+mkdir -p skills
+mv .tmp-idea-to-task/skills/idea-to-task skills/idea-to-task
+rm -rf .tmp-idea-to-task
 ```
+
+无需额外依赖，开箱即用。
 
 ### 使用
 
-在 Claude Code 或 Antigravity 中直接调用：
+在 Claude Code 或者 OpenClaw 中直接调用：
 
 ```text
 /idea-to-task 「这是我的一些想法：我们要做一个 AI 带货助手，首先要搞定视频生成，然后是脚本，还要能自动发抖音。对了，目前咱们没钱请模特，得用数字人。」
@@ -83,10 +101,10 @@ git clone https://github.com/Billin9/idea-to-task.git skills/idea-to-task
 
 ## 技术栈
 
-- **指令工程**: 高级 Markdown + XML 结构提示词
-- **验证工具**: Python (uv runtime)
-- **运行时**: Node.js (CommonJS) / 支持多种 AI 助手运行时
-- **文案规范**: 咨询行业标准 (McKinsey Style)
+- **指令工程**：高级 Markdown + XML 结构化提示词
+- **兼容运行时**：Claude Code、Codex、Gemini、Antigravity、OpenCode、OpenClaw 等 AI 助手（skill 本身为纯 Prompt，无需额外运行时）
+- **开发工具链**：Python (uv) 用于 skill 结构校验；Node.js 仅用于本仓库集成的 GSD 工作流脚本，使用者无需安装
+- **文案规范**：咨询行业标准 (McKinsey Style)
 
 ---
 
