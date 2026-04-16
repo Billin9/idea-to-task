@@ -60,15 +60,18 @@
 
 ### 安装
 
+<!--
 方式一：一键安装（推荐）
 访问 [skills.sh](https://skills.sh/) 页面，按提示一键安装。
+-- 尚未上架 skills.sh，待被索引后再恢复此段 --
+-->
 
-方式二：命令行安装
+方式一：命令行安装（推荐）
 ```bash
 npx skills add https://github.com/Billin9/idea-to-task --skill idea-to-task
 ```
 
-方式三：手动安装
+方式二：手动安装
 
 仓库根目录包含开发脚手架（`.claude/`、`.planning/` 等），真正需要的 skill 仅在 `skills/idea-to-task/` 子目录下。使用 sparse-checkout 精准提取：
 

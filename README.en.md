@@ -61,15 +61,18 @@ Existing task decomposition tools are often just "flat lists"—you give them th
 
 ### Installation
 
+<!--
 Option 1: One-click install (recommended)
 Visit [skills.sh](https://skills.sh/) and follow the prompts.
+-- Hidden until this skill is indexed on skills.sh --
+-->
 
-Option 2: CLI install
+Option 1: CLI install (recommended)
 ```bash
 npx skills add https://github.com/Billin9/idea-to-task --skill idea-to-task
 ```
 
-Option 3: Manual install
+Option 2: Manual install
 
 The repository root ships with development scaffolding (`.claude/`, `.planning/`, etc.); only `skills/idea-to-task/` is the actual skill. Use sparse-checkout to extract it precisely:
 
