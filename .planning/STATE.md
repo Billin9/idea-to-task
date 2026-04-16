@@ -83,4 +83,5 @@ Resume file: .planning/phases/06-examples-compat/06-CONTEXT.md
 
 | Date | Type | Task | Status |
 |------|------|------|--------|
-| 2026-04-15 | fast | 为主项目创建面向开源社区的 README | ✅ |
+| 2026-04-15 | fast | 修正 README 中关于 Skill 通用性与运行时支持的描述 | ✅ |
+| 2026-04-16 | fast | 补充 LICENSE 并校正 README 手动安装与技术栈 | ✅ |
