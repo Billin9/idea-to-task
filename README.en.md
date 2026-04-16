@@ -89,7 +89,7 @@ No extra dependencies — works out of the box.
 Call it directly in Claude Code or Antigravity:
 
 ```bash
-/idea-to-task "Here are some of my thoughts: We're making an AI live-streaming assistant. First, we need to handle video generation, then scripts, and it should be able to auto-post to TikTok. Oh, and we don't have money for models right now, so we need to use digital humans."
+/idea-to-task "Mr. Zhang just said in the group that we need to submit the quarterly report tomorrow, remember to update the sales data. Oh right, there's a client meeting at 3 PM, need to prepare a PPT. Also, follow up on the progress of that project we talked about last time, give me feedback tomorrow. Oh, and finance is urging for expense reports, please handle it as soon as possible."
 ```
 
 ---
