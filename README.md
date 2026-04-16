@@ -87,7 +87,7 @@ cp -r idea-to-task/skills/idea-to-task ~/.claude/skills/
 
 在 Claude Code 或者 OpenClaw 中直接调用：
 
-```text
+```bash
 /idea-to-task 「这是我的一些想法：我们要做一个 AI 带货助手，首先要搞定视频生成，然后是脚本，还要能自动发抖音。对了，目前咱们没钱请模特，得用数字人。」
 ```
 

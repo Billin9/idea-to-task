@@ -88,7 +88,7 @@ No extra dependencies — works out of the box.
 
 Call it directly in Claude Code or Antigravity:
 
-```text
+```bash
 /idea-to-task "Here are some of my thoughts: We're making an AI live-streaming assistant. First, we need to handle video generation, then scripts, and it should be able to auto-post to TikTok. Oh, and we don't have money for models right now, so we need to use digital humans."
 ```
 
